@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umang Tyagi</title>
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://seeklogo.com/images/A/angular-icon-logo-5FC0C40EAC-seeklogo.com.png"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+      .shadow {
+        box-shadow: 18px 18px 50px -8px #c6d1e1 inset !important;
+      }
+
+      .gradient {
+        background: linear-gradient(180deg, #8ddcfe 19.26%, #4b9ffd 81.15%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .drop-shadow {
+        box-shadow: -8px -8px 27px 4px #ffffff;
+        box-shadow: 21px 20px 52px -12px #b0c7e2;
+      }
+
+      .profile-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .aboutMe-grid {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+      }
+
+      .experience-grid {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto;
+        gap: 50px;
+      }
+
+      .skills-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 2fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="flex h-full w-full flex-1 flex-col justify-center gap-y-10 bg-[#E8F1FA] p-5"
+    >
+      <div
+        id="header"
+        class="flex flex-wrap items-center justify-center gap-5 p-4"
+      >
+        <span
+          class="active cursor-pointer rounded-lg px-4 py-2 text-base font-normal text-[#18284B] hover:bg-[#E7EAEF] hover:drop-shadow"
+          >Home</span
+        >
+        <span
+          class="cursor-pointer rounded-lg px-4 py-2 text-base font-normal text-[#18284B] hover:bg-[#E7EAEF] hover:drop-shadow"
+          >About me</span
+        >
+        <span
+          class="cursor-pointer rounded-lg px-4 py-2 text-base font-normal text-[#18284B] hover:bg-[#E7EAEF] hover:drop-shadow"
+          >Skills</span
+        >
+        <span
+          class="cursor-pointer rounded-lg px-4 py-2 text-base font-normal text-[#18284B] hover:bg-[#E7EAEF] hover:drop-shadow"
+          >Experience</span
+        >
+        <span
+          class="cursor-pointer rounded-lg px-4 py-2 text-base font-normal text-[#18284B] hover:bg-[#E7EAEF] hover:drop-shadow"
+          >Contact</span
+        >
+      </div>
+
+      <div
+        id="profile"
+        class="h-auto w-full rounded-2xl bg-[#E8F1F8] p-8 shadow"
+      >
+        <div class="profile-grid h-full w-full">
+          <div
+            class="flex h-full w-full flex-col items-center justify-center gap-y-5"
+          >
+            <span class="gradient w-96 text-center text-3xl font-medium"
+              >Curiosity needs time to thrive, build a strong desire to
+              learn.</span
+            >
+
+            <span
+              class="w-auto cursor-pointer rounded-lg bg-[#E7EAEF] px-5 py-3 pt-5 text-base font-normal text-[#18284B] drop-shadow"
+              >EXPLORE NOW</span
+            >
+          </div>
+
+          <div class="flex h-full w-full items-center justify-center">
+            <img class="h-80 w-auto" src="./assets/umang.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="aboutMe"
+        class="flex h-full w-full items-center justify-center p-8"
+      >
+        <div
+          class="flex h-full w-[70%] flex-row items-center justify-center gap-10"
+        >
+          <div class="flex h-full w-full items-center justify-end">
+            <img class="h-80 w-auto" src="./assets/umang.jpg" alt="" />
+          </div>
+
+          <div class="flex h-full w-full items-start justify-start">
+            <div class="flex flex-col gap-y-2">
+              <span class="mb-1 text-3xl font-medium">About Me</span>
+              <div class="flex flex-col gap-x-1 border-b-2 border-b-[#BACCE2]">
+                <span class="text-xl font-normal">Umang Tyagi</span>
+                <span class="text-base font-normal text-[#3088E5]"
+                  >Frontend Developer</span
+                >
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <div class="flex flex-row gap-x-1">
+                  <span class="">Residence : </span>
+                  <span class="text-gray-500">Noida, Sec-101</span>
+                </div>
+                <div class="flex flex-row gap-x-1">
+                  <span class="">Age : </span>
+                  <span class="text-gray-500">24</span>
+                </div>
+                <span
+                  class="flex h-auto w-full items-center justify-start text-lg font-normal text-gray-500"
+                  >I am a CS Engineer passionate about building Scalable
+                  Web-Applications, currently working as Frontend Developer at
+                  iDreamBiz Pvt Ltd building Meeting500mg and Chat500mg,
+                  previously i have worked at MapmyIndia.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills" class="flex h-full w-full flex-col gap-y-10 p-8">
+        <span class="flex items-center justify-center text-3xl font-medium"
+          >Skills</span
+        >
+
+        <div class="skills-grid flex h-full w-full items-center justify-center">
+          <div></div>
+
+          <div class="flex flex-wrap items-center justify-center gap-5">
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://seeklogo.com/images/A/angular-icon-logo-5FC0C40EAC-seeklogo.com.png"
+                alt=""
+              />
+              <span>Angular</span>
+            </div>
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png?20120221235433"
+                alt=""
+              />
+              <span>JavaScript</span>
+            </div>
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png"
+                alt=""
+              />
+              <span>TypeScript</span>
+            </div>
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://ngrx.io/assets/images/badge.svg"
+                alt=""
+              />
+              <span>NgRx</span>
+            </div>
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://rxjs.dev/generated/images/marketing/home/Rx_Logo-512-512.png"
+                alt=""
+              />
+              <span>RxJS</span>
+            </div>
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+                alt=""
+              />
+              <span>HTML</span>
+            </div>
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png"
+                alt=""
+              />
+              <span>CSS</span>
+            </div>
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                alt=""
+              />
+              <span>Tailwind</span>
+            </div>
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://w7.pngwing.com/pngs/155/858/png-transparent-git-icon-hd-logo-thumbnail.png"
+                alt=""
+              />
+              <span>GIT</span>
+            </div>
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://seeklogo.com/images/W/websocket-logo-91B815D333-seeklogo.com.png"
+                alt=""
+              />
+              <span>WebSocket</span>
+            </div>
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://cdn3.iconfinder.com/data/icons/vector-icons-for-mobile-apps-2/512/Settings_black-512.png"
+                alt=""
+              />
+              <span>WebWorker</span>
+            </div>
+            <div
+              class="flex h-full w-32 flex-col items-center justify-center gap-y-3 rounded-lg bg-[#E7EAEF] p-5"
+            >
+              <img
+                class="h-10 w-10"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg"
+                alt=""
+              />
+              <span>GraphQL</span>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+      </div>
+
+      <div id="experiences" class="flex flex-col gap-y-10">
+        <div class="flex flex-col gap-y-3">
+          <span class="flex items-center justify-center text-3xl font-medium"
+            >Work Experience</span
+          >
+        </div>
+
+        <div class="experience-grid gap-5">
+          <div
+            class="flex h-full w-full flex-col items-end justify-start gap-y-1"
+          >
+            <div class="text-xl font-medium">iDreamBiz Pvt Ltd.</div>
+            <span class="text-base font-normal text-[#3088E5]"
+              >Noida, Sec-142</span
+            >
+          </div>
+
+          <div
+            class="flex h-full w-full flex-col items-center justify-start gap-y-2"
+          >
+            <span
+              class="flex h-auto w-full items-center justify-start text-base font-normal"
+              >Frontend Developer (01/2022 - 05/2023)</span
+            >
+
+            <div
+              class="flex h-full w-full flex-row items-start justify-start gap-x-1"
+            >
+              <span
+                class="mt-2 h-2 w-2 rounded-full border-2 border-black border-opacity-60 bg-white"
+              ></span>
+              <span class="text-base font-normal text-gray-500"
+                >Meeting500mg and Chat500mg are AI-powered productivity apps for
+                enhancing workplace productivity and collaboration.</span
+              >
+            </div>
+            <div
+              class="flex h-full w-full flex-row items-start justify-start gap-x-1"
+            >
+              <span
+                class="mt-2 h-2 w-2 rounded-full border-2 border-black border-opacity-60 bg-white"
+              ></span>
+              <span class="text-base font-normal text-gray-500"
+                >Developed and maintained scalable Meeting500mg and Chat500mg
+                web applications using Angular 15, NgRx, RxJs, HTML, Tailwind,
+                WebSockets, WebWorker, RESTful APIs.</span
+              >
+            </div>
+            <div
+              class="flex h-full w-full flex-row items-start justify-start gap-x-1"
+            >
+              <span
+                class="mt-2 h-2 w-2 rounded-full border-2 border-black border-opacity-60 bg-white"
+              ></span>
+              <span class="text-base font-normal text-gray-500"
+                >Involved in every aspect of Frontend Product Development of
+                Chat500mg and Meeting500mg from scratch.</span
+              >
+            </div>
+            <div
+              class="flex h-full w-full flex-row items-start justify-start gap-x-1"
+            >
+              <span
+                class="mt-2 h-2 w-2 rounded-full border-2 border-black border-opacity-60 bg-white"
+              ></span>
+              <span class="text-base font-normal text-gray-500"
+                >Writing clean & simple code in angular with NgRx, RxJs,
+                Websockets, Web-Worker Implementation.</span
+              >
+            </div>
+            <div
+              class="flex h-full w-full flex-row items-start justify-start gap-x-1"
+            >
+              <span
+                class="mt-2 h-2 w-2 rounded-full border-2 border-black border-opacity-60 bg-white"
+              ></span>
+              <span class="text-base font-normal text-gray-500"
+                >Optimized front-end performance by 25% by refining Angular
+                codebases, following best practice standards.</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="flex h-full w-full flex-col items-end justify-start gap-y-1"
+          >
+            <div class="text-xl font-medium">MapmyIndia</div>
+            <span class="text-base font-normal text-[#3088E5]"
+              >Okhla Phase 3, New Delhi</span
+            >
+          </div>
+
+          <div
+            class="flex h-full w-full flex-col items-center justify-start gap-y-2"
+          >
+            <span
+              class="flex h-auto w-full items-center justify-start text-base font-normal"
+              >Software Engineer (01/2022 - 05/2023)</span
+            >
+
+            <div
+              class="flex h-full w-full flex-row items-start justify-start gap-x-1"
+            >
+              <span
+                class="mt-2 h-2 w-2 rounded-full border-2 border-black border-opacity-60 bg-white"
+              ></span>
+              <span class="text-base font-normal text-gray-500"
+                >Developed 3D Landmark functionality using clustering, opening
+                3D model (GLTF) after certain zoom level using cesium.</span
+              >
+            </div>
+            <div
+              class="flex h-full w-full flex-row items-start justify-start gap-x-1"
+            >
+              <span
+                class="mt-2 h-2 w-2 rounded-full border-2 border-black border-opacity-60 bg-white"
+              ></span>
+              <span class="text-base font-normal text-gray-500"
+                >ReImplemented Feature-Info Functionality for unsaved layers on
+                mGIS using which we can perform CRUD operations on a
+                Feature/Layer.</span
+              >
+            </div>
+            <div
+              class="flex h-full w-full flex-row items-start justify-start gap-x-1"
+            >
+              <span
+                class="mt-2 h-2 w-2 rounded-full border-2 border-black border-opacity-60 bg-white"
+              ></span>
+              <span class="text-base font-normal text-gray-500"
+                >Debugged and resolved issues & bugs in mGIS by resulting in
+                reducing web application bugs by 30%.</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="flex h-full w-full flex-col items-end justify-start gap-y-1"
+          >
+            <div class="text-xl font-medium">Bricks Solutions</div>
+            <span class="text-base font-normal text-[#3088E5]"
+              >Okhla Phase 3, New Delhi</span
+            >
+          </div>
+
+          <div
+            class="flex h-full w-full flex-col items-center justify-start gap-y-2"
+          >
+            <span
+              class="flex h-auto w-full items-center justify-start text-base font-normal"
+              >Software Trainee (12/2020 - 12/2021)</span
+            >
+
+            <div
+              class="flex h-full w-full flex-row items-start justify-start gap-x-1"
+            >
+              <span
+                class="mt-2 h-2 w-2 rounded-full border-2 border-black border-opacity-60 bg-white"
+              ></span>
+              <span class="text-base font-normal text-gray-500"
+                >Implemented and did R&D on panoviewer application (360 panorama
+                image viewer).</span
+              >
+            </div>
+            <div
+              class="flex h-full w-full flex-row items-start justify-start gap-x-1"
+            >
+              <span
+                class="mt-2 h-2 w-2 rounded-full border-2 border-black border-opacity-60 bg-white"
+              ></span>
+              <span class="text-base font-normal text-gray-500"
+                >Writing sql queries for qEye application for finding errors in
+                geospatial data.</span
+              >
+            </div>
+            <div
+              class="flex h-full w-full flex-row items-start justify-start gap-x-1"
+            >
+              <span
+                class="mt-2 h-2 w-2 rounded-full border-2 border-black border-opacity-60 bg-white"
+              ></span>
+              <span class="text-base font-normal text-gray-500"
+                >Build an application for automating the data uploading manual
+                task.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="contactMe"
+        class="flex h-full w-full flex-col items-center justify-center gap-y-5 p-5"
+      >
+        <span class="flex items-center justify-center text-3xl font-medium"
+          >Contact Me</span
+        >
+
+        <div
+          class="flex h-full w-full flex-wrap items-center justify-center gap-10"
+        >
+          <div
+            class="flex flex-row items-center justify-center gap-3 rounded-lg bg-[#E7EAEF] px-3 py-2 drop-shadow"
+          >
+            <img
+              class="h-5 w-5"
+              src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
+              alt=""
+            />
+            <span class="text-base font-medium text-[#47597A]"
+              >umangt7210@gmail.com</span
+            >
+          </div>
+
+          <div
+            class="flex flex-row items-center justify-center gap-3 rounded-lg bg-[#E7EAEF] px-3 py-2 drop-shadow"
+          >
+            <img
+              class="h-5 w-5 mix-blend-darken"
+              src="https://www.pngitem.com/pimgs/m/11-112544_cell-phone-number-svg-png-icon-free-download.png"
+              alt=""
+            />
+            <span class="text-base font-medium text-[#47597A]">7210928104</span>
+          </div>
+
+          <div
+            class="flex flex-row items-center justify-center gap-3 rounded-lg bg-[#E7EAEF] px-3 py-2 drop-shadow"
+          >
+            <img
+              class="h-5 w-5 mix-blend-darken"
+              src="https://png.pngtree.com/png-vector/20190419/ourmid/pngtree-vector-location-icon-png-image_956422.jpg"
+              alt=""
+            />
+            <span class="text-base font-medium text-[#47597A]"
+              >Sec-101, Noida</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
